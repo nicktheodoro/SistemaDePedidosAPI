@@ -1,13 +1,11 @@
 using Microsoft.EntityFrameworkCore;
-using SitemaDePedidosAPI.Data.Configurations;
-using SitemaDePedidosAPI.Domain;
 
 namespace SitemaDePedidosAPI.Data
 {
     public class ApllicationContext : DbContext
     {
         //Com o DbSet o ORM Mapea automáticamente a minha classe;
-        public DbSet<Pedido> Pedidos { get; set; }
+        // public DbSet<Pedido> Pedidos { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
