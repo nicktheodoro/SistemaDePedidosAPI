@@ -1,0 +1,20 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace SitemaDePedidosAPI.Domain
+{
+    //Trabalhando com DataAnnotations e Schema
+    [Table("Clientes")] //muda o nome da tabela
+    public class Cliente
+    {
+        [Key]
+        public int Id { get; set; }
+        [Required]
+        public string Nome { get; set; }
+        [Column("Phone")] // muda o nome do campo na base de dados
+        public string Telone { get; set; }
+        public string CEP { get; set; }
+        public string Estado { get; set; }
+        public string Cidade { get; set; }
+    }
+}
