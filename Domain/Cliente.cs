@@ -12,7 +12,7 @@ namespace SitemaDePedidosAPI.Domain
         [Required]
         public string Nome { get; set; }
         [Column("Phone")] // muda o nome do campo na base de dados
-        public string Telone { get; set; }
+        public string Telefone { get; set; }
         public string CEP { get; set; }
         public string Estado { get; set; }
         public string Cidade { get; set; }
